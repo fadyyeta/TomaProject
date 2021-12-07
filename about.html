@@ -7,6 +7,18 @@
     <title>Electronics R&S</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Set the size of the div element that contains the map */
+        #map {
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+            height: 400px;
+            /* The height is 400 pixels */
+            width: 90%;
+            /* The width is the width of the web page */
+        }
+    </style>
 </head>
 
 <body>
@@ -96,6 +108,34 @@
         </div>
 
     </div>
+    <!----------------------------------- map ---------------------------------->
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            const uluru = {
+                lat: 50.0755,
+                lng: 14.4378
+            };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 7,
+                center: uluru,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
+        }
+    </script>
+    <!--The div element for the map -->
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHJxzPHD_egYnhxntqcvfem35YRjruzAg&callback=initMap"
+        async></script>
+    <!--------------------------------------------------------------------------->
 
     <div class="footer">
         <p>CZU - <b>INFORMATICS</b> &copy; 2021 Electronics R&S - All right reserved</p>
