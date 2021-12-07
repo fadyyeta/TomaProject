@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,25 +8,26 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-        <!-- Navigation bar -->
-<header id="headerTop">
+    <!-- Navigation bar -->
+    <header>
         <nav>
             <div class="moblogo">
                 <img src="mobtech2.png" alt="Electronics R&S logo">
             </div>
-                <div class="right_navbar" id="myTopnav">
-                    <a href="faq.html"> FAQ </a>
-                    <a href="about.html"> ABOUT US </a>
-                    <a href="accessories.html"> ACCESSORIES </a>
-                    <a href="services.html"> SERVICES </a>
-                    <a href="index.html" class="active"> HOME </a>
-                    <a href="#headerTop" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-                </div>
+            <div class="right_navbar" id="myTopnav">
+                <a href="faq.html"> FAQ </a>
+                <a href="about.html"> ABOUT US </a>
+                <a href="accessories.html"> ACCESSORIES </a>
+                <a href="services.html"> SERVICES </a>
+                <a href="index.html" class="active"> HOME </a>
+                <a href="#" class="icon" onclick="myFunction()"><span><i class="fa fa-bars"></i></span></a>
+            </div>
         </nav>
-</header>
+    </header>
 
-        <script>
+    <script>
         function myFunction() {
             var x = document.getElementById("myTopnav");
             if (x.className === "right_navbar") {
@@ -34,19 +36,20 @@
                 x.className = "right_navbar";
             }
         }
-        </script>
-        <main class="backgroundimage">
-            <div class="col-4 text">
-                <h1> Share your Experince</h1>
-                <h1>OR</h1>
-                <h1>Find your solution </h1>
-            </div>
-        </main>
+    </script>
+    <main class="backgroundimage">
+        <div class="col-4 text">
+            <h1> Share your Experince</h1>
+            <h1>OR</h1>
+            <h1>Find your solution </h1>
+        </div>
+    </main>
 
 
-<footer class="footer">
-  <p>CZU - <b>INFORMATICS</b> &copy; 2021 Electronics R&S - All right reserved</p>
-</footer>
+    <footer class="footer">
+        <p>CZU - <b>INFORMATICS</b> &copy; 2021 Electronics R&S - All right reserved</p>
+    </footer>
 
 </body>
+
 </html>
